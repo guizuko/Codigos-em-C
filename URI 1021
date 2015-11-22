@@ -1,0 +1,68 @@
+#include <stdio.h>
+int main (void){
+        double VALOR;
+        int CEDULAS,CEDULAS2,MOEDAS,MOEDAS2; 
+        scanf ("%lf", &VALOR);
+        CEDULAS= (int)VALOR;
+        MOEDAS=(VALOR-CEDULAS)*100;
+          
+        CEDULAS2=CEDULAS%100;
+        CEDULAS=CEDULAS/100;
+        printf("NOTAS:\n%d nota(s) de R$ 100.00\n",CEDULAS);
+           
+        CEDULAS=CEDULAS2;
+        CEDULAS2=CEDULAS%50;
+        CEDULAS=CEDULAS/50;
+        printf("%d nota(s) de R$ 50.00\n",CEDULAS);
+           
+        CEDULAS=CEDULAS2;
+        CEDULAS2=CEDULAS%20;
+        CEDULAS=CEDULAS/20;
+        printf("%d nota(s) de R$ 20.00\n",CEDULAS);        
+           
+        CEDULAS=CEDULAS2;
+        CEDULAS2=CEDULAS%10;
+        CEDULAS=CEDULAS/10;
+        printf("%d nota(s) de R$ 10.00\n",CEDULAS);
+           
+        CEDULAS=CEDULAS2;
+        CEDULAS2=CEDULAS%5;
+        CEDULAS=CEDULAS/5;
+        printf("%d nota(s) de R$ 5.00\n",CEDULAS);
+           
+       CEDULAS=CEDULAS2;
+        CEDULAS2=CEDULAS%2;
+        CEDULAS=CEDULAS/2;
+        printf("%d nota(s) de R$ 2.00\n",CEDULAS);
+           
+        CEDULAS=CEDULAS2;
+        CEDULAS2=CEDULAS%1;
+        CEDULAS=CEDULAS/1;
+        printf("MOEDAS:\n%d moeda(s) de R$ 1.00\n",CEDULAS);
+          
+        MOEDAS2=MOEDAS%50;
+        MOEDAS=MOEDAS/50;
+        printf("%d moeda(s) de R$ 0.50\n",MOEDAS);
+          
+        MOEDAS=MOEDAS2;
+        MOEDAS2=MOEDAS%25;
+        MOEDAS=MOEDAS/25;
+        printf("%d moeda(s) de R$ 0.25\n",MOEDAS);
+          
+        MOEDAS=MOEDAS2;
+        MOEDAS2=MOEDAS%10;
+        MOEDAS=MOEDAS/10;
+        printf("%d moeda(s) de R$ 0.10\n",MOEDAS);
+          
+        MOEDAS=MOEDAS2;
+         MOEDAS2=MOEDAS%5;
+        MOEDAS=MOEDAS/5;
+        printf("%d moeda(s) de R$ 0.05\n",MOEDAS);
+          
+        MOEDAS=MOEDAS2;
+        MOEDAS2=MOEDAS%1;
+        MOEDAS=MOEDAS/1;
+        printf("%d moeda(s) de R$ 0.01\n",MOEDAS);
+          
+        return 0;
+    }
