@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main (void){
+        int H,KM;
+        float M; 
+        scanf ("%d", &H);
+        scanf ("%d", &KM);
+        M=H*KM;
+        printf("%.3f\n",M/12);
+       return 0;
+    }
