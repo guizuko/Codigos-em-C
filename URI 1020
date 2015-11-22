@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main (void){
+        int ANO,MES,DIA; 
+        scanf ("%d", &DIA);
+        ANO=DIA/365;
+        MES=(DIA%365)/30;
+        DIA=((DIA%365)%30);
+        printf("%d ano(s)\n%d mes(es)\n%d dia(s)\n",ANO,MES,DIA);
+        return 0;
+    }
