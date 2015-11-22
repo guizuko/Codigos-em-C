@@ -1,0 +1,40 @@
+#include <stdio.h>
+int main (void){
+        int VALOR,VALOR2; 
+        scanf ("%d", &VALOR);
+        printf("%d\n",VALOR);
+        VALOR2=VALOR%100;
+        VALOR=VALOR/100;
+        printf("%d nota(s) de R$ 100,00\n",VALOR);
+          
+        VALOR=VALOR2;
+        VALOR2=VALOR%50;
+        VALOR=VALOR/50;
+        printf("%d nota(s) de R$ 50,00\n",VALOR);
+          
+        VALOR=VALOR2;
+        VALOR2=VALOR%20;
+        VALOR=VALOR/20;
+        printf("%d nota(s) de R$ 20,00\n",VALOR);        
+          
+        VALOR=VALOR2;
+        VALOR2=VALOR%10;
+        VALOR=VALOR/10;
+        printf("%d nota(s) de R$ 10,00\n",VALOR);
+          
+        VALOR=VALOR2;
+        VALOR2=VALOR%5;
+        VALOR=VALOR/5;
+        printf("%d nota(s) de R$ 5,00\n",VALOR);
+          
+        VALOR=VALOR2;
+        VALOR2=VALOR%2;
+        VALOR=VALOR/2;
+        printf("%d nota(s) de R$ 2,00\n",VALOR);
+          
+        VALOR=VALOR2;
+        VALOR2=VALOR%1;
+        VALOR=VALOR/1;
+        printf("%d nota(s) de R$ 1,00\n",VALOR);
+        return 0;
+    }
