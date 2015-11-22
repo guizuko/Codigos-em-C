@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main (void){
+char NOME;
+double SALARY,BONUS;  
+scanf("%s",&NOME);    
+scanf("%lf",&SALARY);
+scanf("%lf",&BONUS);
+printf("TOTAL = R$ %.2lf\n",SALARY+(BONUS*0.15));
+return 0; 
+}
