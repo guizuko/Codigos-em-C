@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main (void){
+        int HORA,MIM,SEG; 
+        scanf ("%d", &SEG);
+        HORA=SEG/3600;
+        MIM=(SEG%3600)/60;
+        SEG=((SEG%3600)%60);
+        printf("%d:%d:%d\n",HORA,MIM,SEG);
+        return 0;
+    }
